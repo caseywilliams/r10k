@@ -19,7 +19,7 @@ This document is based around Puppet 4+, specifically using the Puppet Collectio
 Install and enable the official Puppet Labs package repositories.
 
 ```
-yum localinstall http://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm
+yum localinstall http://yum.puppet.com/puppet-release-el-7.noarch.rpm
 ```
 
 Clean all yum data and rebuild the metadata cache.
@@ -39,8 +39,8 @@ yum install puppetserver
 Install and enable the official Puppet Labs package repositories
 
 ```
-wget http://apt.puppetlabs.com/puppetlabs-release-pc1-wheezy.deb
-dpkg -i puppetlabs-release-pc1-wheezy.deb
+wget http://apt.puppet.com/puppet-release-stretch.deb
+dpkg -i puppet-release-stretch.deb
 apt-get update
 ```
 
@@ -150,7 +150,7 @@ ntp::servers:
 Edit the `Puppetfile` file and ensure it has the following contents:
 
 ```
-forge 'forge.puppetlabs.com'
+forge 'forge.puppet.com'
 
 # Forge Modules
 mod 'puppetlabs/ntp', '4.1.0'

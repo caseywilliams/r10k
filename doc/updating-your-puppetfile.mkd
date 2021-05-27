@@ -6,11 +6,11 @@ Over time, your Puppetfile may become stale and reference older versions of modu
 Manual Updates
 --------------
 
-You can manually update your Puppetfile very easily. By visiting the module's homepage on the [Puppet Forge](https://forge.puppetlabs.com/), you can determine the new version of a module and update it:
+You can manually update your Puppetfile very easily. By visiting the module's homepage on the [Puppet Forge](https://forge.puppet.com/), you can determine the new version of a module and update it:
 
     # Original
     mod 'puppetlabs/apache', '0.10.0'
-    
+
     # New
     mod 'puppetlabs/apache', '1.0.0'
 
@@ -20,13 +20,13 @@ When using a module directly from a git/svn repo, the `:tag` or `:ref` should be
     mod 'apache',
       :git => 'https://github.com/puppetlabs/puppetlabs-apache',
       :tag => '0.10.0'
-      
+
     # Original
     mod 'apache',
       :git => 'https://github.com/puppetlabs/puppetlabs-apache',
       :tag => '1.0.0'
 
-Dependency tracking can be done on the Puppet Forge as well by looking at the Dependency tab (Ex: [puppetlabs/apache](https://forge.puppetlabs.com/puppetlabs/apache/dependencies) and visiting each module in turn, or examining `metadata.json` in non-forge modules.
+Dependency tracking can be done on the Puppet Forge as well by looking at the Dependency tab (Ex: [puppetlabs/apache](https://forge.puppet.com/puppetlabs/apache/dependencies) and visiting each module in turn, or examining `metadata.json` in non-forge modules.
 
 Automatic Updates
 -----------------

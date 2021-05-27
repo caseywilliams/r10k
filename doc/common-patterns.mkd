@@ -40,5 +40,5 @@ module repos to initiate an r10k deploy. You can develop your own or use a
 publicly available hook. These include:
 
 * [Reaktor](https://github.com/pzim/reaktor)
-* [zack/r10k's Webhooks](https://forge.puppetlabs.com/zack/r10k#webhook-support)
+* [zack/r10k's Webhooks](https://forge.puppet.com/zack/r10k#webhook-support)
 (Puppet Enterprise only)
